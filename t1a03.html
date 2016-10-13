@@ -1,0 +1,52 @@
+
+
+
+<h1 align=center>T1A03-Color by Evan</h1>
+<input id="myInput" type=text value="12" maxlength="2"> <br><br>
+
+
+<input id="button" type=button value="Loop Add" onclick="{
+  myOut = document.getElementById('myArea')
+  myIn  = document.getElementById('myInput')
+  myOut.innerHTML = ''
+         
+  for (myCount = 0; myCount <= 25; myCount++){
+    if (myCount <= 25 ){
+      myOut.innerHTML +='<font color=red>' + myCount + '</font></br>'
+    }
+        
+    } 
+  for (myCount = 26; myCount <= 50; myCount++){  
+        if (myCount <= 50 ){
+      myOut.innerHTML +='<font color=orange>' + myCount + '</font></br>'
+    }
+  }  
+  for (myCount = 51; myCount <= 75; myCount++){  
+        if (myCount <= 75 ){
+      myOut.innerHTML +='<font color=yellow>' + myCount + '</font></br>'
+    }
+  }
+  for (myCount = 76; myCount <= 99; myCount++){  
+        if (myCount <= 99 ){
+      myOut.innerHTML +='<font color=green>' + myCount + '</font></br>'
+    }
+  }  
+}"> <br><br>
+
+
+
+<input type=button value="show Div after clicking Loop Add" onclick="{  
+   alert(myOut.innerHTML)
+}">
+
+<div id="myArea" > Your output  will  go here <br></div> <br>
+
+<script>
+  function myFunction() {
+    document.body.style.backgroundColor = "red";
+  }
+</script>
+
+<html>
+  <body bgcolor="#333333">
+</html>
