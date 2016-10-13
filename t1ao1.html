@@ -1,0 +1,21 @@
+Hi <b>There </b>World<br><br>
+
+<input id="myText" type=text value="Name"> <br><br>
+
+<input type=button value="Run Text" onclick="{
+  myOut = document.getElementById('myArea')
+  myIn = document.getElementById('myText')
+  //alert(myIn.value)
+  for (myCount = 10; myCount >= 1; myCount--){
+     myOut.innerHTML += myCount + ' ' + myIn.value
+     if ((myCount == 3)||(myCount == 7)){
+        myOut.innerHTML += ' Neat'
+     }
+     myOut.innerHTML += '<br>' 
+  }
+}"> <br><br>
+
+<div id="myArea" > Some Type of Area <br> </div> <br>
+<input type=button value="Show myOut" onclick="{ 
+   alert('The variable myOut contains ' + myOut.innerHTML)
+}">
