@@ -1,0 +1,32 @@
+<h1 align=center><b>T1A05-Array by Evan</b></h1><br><br>
+
+<script>
+     myIntArray = new Array()
+    
+     myIntArray[0] = Math.floor(Math.random() * 888) + 111;   
+        Math.floor(Math.random() * 888) + 111;  
+
+     document.writeln(myIntArray[0]+'<br><br><b> Now Print all 10 </b><br><br>')
+     myMin=11
+     for (myCount = 1; myCount < myMin; myCount++){
+       myIntArray[myCount] =   Math.floor(Math.random() * 888) + 111;        
+       document.writeln(myCount + ' = ' + myIntArray[myCount]+'<br>')
+         
+     }
+     
+     document.writeln('<br><b> Now The Hard Part 100 Numbers</b><br>')
+     
+    document.writeln('<br><b> Set The Array</b><br>')
+    myMax = 101
+    for (myCount = 1;  myCount < myMax; myCount++){
+       myIntArray[myCount] =   Math.floor(Math.random() * 888) + 111;  
+        
+    }
+    
+     document.writeln('<br><b> Print The Array</b><br><br>')
+     for (myCount = 1; myCount < myMax; myCount++){
+        document.writeln(myCount + ' = ' + myIntArray[myCount]+'<br>')  
+     }
+     
+
+</script>
