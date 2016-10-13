@@ -1,0 +1,85 @@
+<h1 align=center><b>A Web Page by Evan</b></h1>
+
+<div id="myquestion" >?</div>
+<input type=button value="A pointless button" onclick="{
+   document.getElementById('myQuestion').innerHTML = 'Hello World'
+   
+}"><br>
+
+   <br><b><i>Rad Pics yo</i></b><br>
+   <br> <img src="http://i1.kym-cdn.com/photos/images/original/001/017/883/186.png" width=100<br>
+   <br><b>Image from the web</b>
+   <br> <img width=100 src="http://vignette3.wikia.nocookie.net/filthy-frank/images/7/70/IDubbbzTV_-_Bald.png/revision/latest/zoom-crop/width/240/height/240?cb=20160211012155"<br>
+   <br><br> <a href="http://www.google.ca">http://www.google.ca</a><br>
+   <br> <b>Bold Text,</b> <i>Italic Text,</i> <b><i>BOTH TYPES!</i></b><br>
+
+<br><table border=1>
+   <th>Best Game Series</th><th>Best Game in Series</th>
+   <tr><td>Payday</td><td>Payday 2</td>
+   <tr><td>Hotline Miami</td><td>Hotline Miami 2</td></tr>
+   <tr><td>Rainbow Six</td><td>Rainbow Six: Siege</td></tr>
+   <tr><td>Battlefield</td><td>Battlefield 4</td></tr>
+   <tr><td>The Elder Scrolls</td><td>V - Skyrim</td></tr>
+</table>
+
+<br><b>Unordered List</b>
+<ul>
+   <li><b>2</b></li>
+   <li><b>1</b></li>
+</ul>
+
+<b style="background-color:blue; color:pink">Coloured Text</b>
+
+<br><br><br><br>
+
+<div id="myDiv01" style="position:relative;left:0;top:0"><img src="https://media.giphy.com/media/WHhwkEIIB3PDa/200.gif" width=40"></div><br><br><br>
+
+<table>
+<table border=0>
+
+<tr><td><input type=button value="\" onclick="{
+   my01 = document.getElementById('myDiv01')
+   my01.style.top = parseInt(my01.style.top) - 20 + 'px'
+   my01.style.left = parseInt(my01.style.left) - 20 + 'px'
+}"></td>
+
+<td><input type=button value="^" onclick="{
+   my01 = document.getElementById('myDiv01')
+   my01.style.top = parseInt(my01.style.top) - 20 + 'px'
+}"></td>
+
+<td><input type=button value="/" onclick="{
+   my01 = document.getElementById('myDiv01')
+  // alert(my01.style.left) 
+   my01.style.top = parseInt(my01.style.top) - 20 + 'px'
+   my01.style.left = parseInt(my01.style.left) + 20 + 'px'
+}"></td></tr>
+
+<tr><td><input type=button value="<" onclick="{
+   my01 = document.getElementById('myDiv01')
+   my01.style.left = parseInt(my01.style.left) - 20 + 'px'
+}"></td><td></td>
+
+<td><input type=button value=">" onclick="{
+   my01 = document.getElementById('myDiv01')
+   my01.style.left = parseInt(my01.style.left) + 20 + 'px'
+}"></td></tr>
+
+<tr><td><input type=button value="/" onclick="{
+   my01 = document.getElementById('myDiv01')
+   my01.style.top = parseInt(my01.style.top) + 20 + 'px'
+   my01.style.left = parseInt(my01.style.left) - 20 + 'px'
+}"></td>
+
+<td><input type=button value="V" onclick="{
+   my01 = document.getElementById('myDiv01')
+   my01.style.top = parseInt(my01.style.top) + 20 + 'px'
+}"></td>
+
+<td><input type=button value="\" onclick="{
+   my01 = document.getElementById('myDiv01')
+   my01.style.top = parseInt(my01.style.top) + 20 + 'px'
+   my01.style.left = parseInt(my01.style.left) + 20 + 'px'
+}"></td></tr>
+
+</table>
