@@ -1,0 +1,174 @@
+<h1 align=center>Spy Program by Evan</h1>
+
+
+Write some cool stuff<br>
+<textarea id="myArea1" rows=5 cols=70></textarea><br>
+
+<input type=button value=Encrypt onclick="{
+   myStart = document.getElementById('myArea1').value
+   //document.getElementById('myArea2')
+   myMax = document.getElementById('myArea1').value.length
+   document.getElementById('myArea2').value = ''
+   
+   for (myLoop = 0; myLoop <= myMax; myLoop++){
+      myEnd = ''
+      if (myStart[myLoop] == 'A'){myEnd = 'B'}
+      if (myStart[myLoop] == 'B'){myEnd = 'C'}
+      if (myStart[myLoop] == 'C'){myEnd = 'D'}
+      if (myStart[myLoop] == 'D'){myEnd = 'E'}
+      if (myStart[myLoop] == 'E'){myEnd = 'F'}
+      if (myStart[myLoop] == 'F'){myEnd = 'G'}
+      if (myStart[myLoop] == 'G'){myEnd = 'H'}
+      if (myStart[myLoop] == 'H'){myEnd = 'I'}
+      if (myStart[myLoop] == 'I'){myEnd = 'J'}
+      if (myStart[myLoop] == 'J'){myEnd = 'K'}
+      if (myStart[myLoop] == 'K'){myEnd = 'L'}
+      if (myStart[myLoop] == 'L'){myEnd = 'M'}
+      if (myStart[myLoop] == 'M'){myEnd = 'N'}
+      if (myStart[myLoop] == 'N'){myEnd = 'O'}
+      if (myStart[myLoop] == 'O'){myEnd = 'P'}
+      if (myStart[myLoop] == 'P'){myEnd = 'Q'}
+      if (myStart[myLoop] == 'Q'){myEnd = 'R'}
+      if (myStart[myLoop] == 'R'){myEnd = 'S'}
+      if (myStart[myLoop] == 'S'){myEnd = 'T'}
+      if (myStart[myLoop] == 'T'){myEnd = 'U'}
+      if (myStart[myLoop] == 'U'){myEnd = 'V'}
+      if (myStart[myLoop] == 'V'){myEnd = 'W'}
+      if (myStart[myLoop] == 'W'){myEnd = 'X'}
+      if (myStart[myLoop] == 'X'){myEnd = 'Y'}
+      if (myStart[myLoop] == 'Y'){myEnd = 'Z'}
+      if (myStart[myLoop] == 'Z'){myEnd = 'A'}
+      if (myStart[myLoop] == 'a'){myEnd = 'b'}
+      if (myStart[myLoop] == 'b'){myEnd = 'c'}
+      if (myStart[myLoop] == 'c'){myEnd = 'd'}
+      if (myStart[myLoop] == 'd'){myEnd = 'e'}
+      if (myStart[myLoop] == 'e'){myEnd = 'f'}
+      if (myStart[myLoop] == 'f'){myEnd = 'g'}
+      if (myStart[myLoop] == 'g'){myEnd = 'h'}
+      if (myStart[myLoop] == 'h'){myEnd = 'i'}
+      if (myStart[myLoop] == 'i'){myEnd = 'j'}
+      if (myStart[myLoop] == 'j'){myEnd = 'k'}
+      if (myStart[myLoop] == 'k'){myEnd = 'l'}
+      if (myStart[myLoop] == 'l'){myEnd = 'm'}
+      if (myStart[myLoop] == 'm'){myEnd = 'n'}
+      if (myStart[myLoop] == 'n'){myEnd = 'o'}
+      if (myStart[myLoop] == 'o'){myEnd = 'p'}
+      if (myStart[myLoop] == 'p'){myEnd = 'q'}
+      if (myStart[myLoop] == 'q'){myEnd = 'r'}
+      if (myStart[myLoop] == 'r'){myEnd = 's'}
+      if (myStart[myLoop] == 's'){myEnd = 't'}
+      if (myStart[myLoop] == 't'){myEnd = 'u'}
+      if (myStart[myLoop] == 'u'){myEnd = 'v'}
+      if (myStart[myLoop] == 'v'){myEnd = 'w'}
+      if (myStart[myLoop] == 'w'){myEnd = 'x'}
+      if (myStart[myLoop] == 'x'){myEnd = 'y'}
+      if (myStart[myLoop] == 'y'){myEnd = 'z'}
+      if (myStart[myLoop] == 'z'){myEnd = 'a'}
+      if (myStart[myLoop] == ' '){myEnd = '!'}
+      if (myStart[myLoop] == '0'){myEnd = '1'}
+      if (myStart[myLoop] == '1'){myEnd = '2'}
+      if (myStart[myLoop] == '2'){myEnd = '3'}
+      if (myStart[myLoop] == '3'){myEnd = '4'}
+      if (myStart[myLoop] == '4'){myEnd = '5'}
+      if (myStart[myLoop] == '5'){myEnd = '6'}
+      if (myStart[myLoop] == '6'){myEnd = '7'}
+      if (myStart[myLoop] == '7'){myEnd = '8'}
+      if (myStart[myLoop] == '8'){myEnd = '9'}
+      if (myStart[myLoop] == '9'){myEnd = '0'}
+      if (myStart[myLoop] == '.'){myEnd = '_'}
+      if (myStart[myLoop] == '_'){myEnd = '-'}
+      if (myStart[myLoop] == '-'){myEnd = '.'}
+      if (myStart[myLoop] == ','){myEnd = '/'}
+      if (myStart[myLoop] == '!'){myEnd = '@'}
+      document.getElementById('myArea2').value += myEnd
+   }
+
+}"><br>
+
+The encrypted version to email goes here<br>
+<textarea id="myArea2" rows=5 cols=70></textarea><br>
+
+The decrypted reply goes here.<br>
+<input type=button value=Decrypt onclick="{
+   myEnd = document.getElementById('myArea2').value
+   document.getElementById('myArea3').value = ''
+      
+   for (myLoop = 0; myLoop <= myMax; myLoop++){
+      myEnd2 = ''
+      if (myEnd[myLoop] == 'B'){myEnd2 = 'A'}
+      if (myEnd[myLoop] == 'C'){myEnd2 = 'B'}
+      if (myEnd[myLoop] == 'D'){myEnd2 = 'C'}
+      if (myEnd[myLoop] == 'E'){myEnd2 = 'D'}
+      if (myEnd[myLoop] == 'F'){myEnd2 = 'E'}
+      if (myEnd[myLoop] == 'G'){myEnd2 = 'F'}
+      if (myEnd[myLoop] == 'H'){myEnd2 = 'G'}
+      if (myEnd[myLoop] == 'I'){myEnd2 = 'H'}
+      if (myEnd[myLoop] == 'J'){myEnd2 = 'I'}
+      if (myEnd[myLoop] == 'K'){myEnd2 = 'J'}
+      if (myEnd[myLoop] == 'L'){myEnd2 = 'K'}
+      if (myEnd[myLoop] == 'M'){myEnd2 = 'L'}
+      if (myEnd[myLoop] == 'N'){myEnd2 = 'M'}
+      if (myEnd[myLoop] == 'O'){myEnd2 = 'N'}
+      if (myEnd[myLoop] == 'P'){myEnd2 = 'O'}
+      if (myEnd[myLoop] == 'Q'){myEnd2 = 'P'}
+      if (myEnd[myLoop] == 'R'){myEnd2 = 'Q'}
+      if (myEnd[myLoop] == 'S'){myEnd2 = 'R'}
+      if (myEnd[myLoop] == 'T'){myEnd2 = 'S'}
+      if (myEnd[myLoop] == 'U'){myEnd2 = 'T'}
+      if (myEnd[myLoop] == 'V'){myEnd2 = 'U'}
+      if (myEnd[myLoop] == 'W'){myEnd2 = 'V'}
+      if (myEnd[myLoop] == 'X'){myEnd2 = 'W'}
+      if (myEnd[myLoop] == 'Y'){myEnd2 = 'X'}
+      if (myEnd[myLoop] == 'Z'){myEnd2 = 'Y'}
+      if (myEnd[myLoop] == 'A'){myEnd2 = 'Z'}
+      if (myEnd[myLoop] == 'b'){myEnd2 = 'a'}
+      if (myEnd[myLoop] == 'c'){myEnd2 = 'b'}
+      if (myEnd[myLoop] == 'd'){myEnd2 = 'c'}
+      if (myEnd[myLoop] == 'e'){myEnd2 = 'd'}
+      if (myEnd[myLoop] == 'f'){myEnd2 = 'e'}
+      if (myEnd[myLoop] == 'g'){myEnd2 = 'f'}
+      if (myEnd[myLoop] == 'h'){myEnd2 = 'g'}
+      if (myEnd[myLoop] == 'i'){myEnd2 = 'h'}
+      if (myEnd[myLoop] == 'j'){myEnd2 = 'i'}
+      if (myEnd[myLoop] == 'k'){myEnd2 = 'j'}
+      if (myEnd[myLoop] == 'l'){myEnd2 = 'k'}
+      if (myEnd[myLoop] == 'm'){myEnd2 = 'l'}
+      if (myEnd[myLoop] == 'n'){myEnd2 = 'm'}
+      if (myEnd[myLoop] == 'o'){myEnd2 = 'n'}
+      if (myEnd[myLoop] == 'p'){myEnd2 = 'o'}
+      if (myEnd[myLoop] == 'q'){myEnd2 = 'p'}
+      if (myEnd[myLoop] == 'r'){myEnd2 = 'q'}
+      if (myEnd[myLoop] == 's'){myEnd2 = 'r'}
+      if (myEnd[myLoop] == 't'){myEnd2 = 's'}
+      if (myEnd[myLoop] == 'u'){myEnd2 = 't'}
+      if (myEnd[myLoop] == 'v'){myEnd2 = 'u'}
+      if (myEnd[myLoop] == 'w'){myEnd2 = 'v'}
+      if (myEnd[myLoop] == 'x'){myEnd2 = 'w'}
+      if (myEnd[myLoop] == 'y'){myEnd2 = 'x'}
+      if (myEnd[myLoop] == 'z'){myEnd2 = 'y'}
+      if (myEnd[myLoop] == 'a'){myEnd2 = 'z'}
+      if (myEnd[myLoop] == '!'){myEnd2 = ' '}
+      if (myEnd[myLoop] == '1'){myEnd2 = '0'}
+      if (myEnd[myLoop] == '2'){myEnd2 = '1'}
+      if (myEnd[myLoop] == '3'){myEnd2 = '2'}
+      if (myEnd[myLoop] == '4'){myEnd2 = '3'}
+      if (myEnd[myLoop] == '5'){myEnd2 = '4'}
+      if (myEnd[myLoop] == '6'){myEnd2 = '5'}
+      if (myEnd[myLoop] == '7'){myEnd2 = '6'}
+      if (myEnd[myLoop] == '8'){myEnd2 = '7'}
+      if (myEnd[myLoop] == '9'){myEnd2 = '8'}
+      if (myEnd[myLoop] == '0'){myEnd2 = '9'}
+      if (myEnd[myLoop] == '_'){myEnd2 = '.'}
+      if (myEnd[myLoop] == '-'){myEnd2 = '_'}
+      if (myEnd[myLoop] == '.'){myEnd2 = '-'}
+      if (myEnd[myLoop] == ','){myEnd2 = '/'}
+      if (myEnd[myLoop] == '@'){myEnd2 = '!'}
+      document.getElementById('myArea3').value += myEnd2
+
+    }  
+
+
+}"><br>
+
+
+<textarea id="myArea3" rows=5 cols=70></textarea><br>
