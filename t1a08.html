@@ -1,0 +1,107 @@
+<head>
+  <style>
+div {
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+}
+
+</style>
+</head>
+<body onkeypress="{
+  document.getElementById('myOut1').innerHTML = 
+  String.fromCharCode(event.keyCode) + ' = ' + event.keyCode
+
+}">
+
+<h1 align=center> Events by Evan</h1>
+
+  <h2>
+    <ul>
+      <li>onClick bold text</li>
+      <li>onClick Time box</li>
+      <li>onMouseover the tiger image</li>
+      <li>onScroll eyy lmaoo text box</li>
+      <li>onSelect textbox data</li>
+      <li>onKeypress textbox</li>
+      <li>isKeyPressed textbox (use shiftkey)</li>
+      <li>onResize (resize window) *broken*
+        <ul>
+          Scrolling with the text box causes this to work. Syntax error?
+        </ul></li>
+        </ul>
+      <li></li>
+      <li></li>
+  </h2>
+
+This <b onClick="{
+  alert('hi')
+}"> is Bold </b> not this.<br><br><br><br>
+
+<input type=text value=evan id="myText1" onselect="{ 
+  document.getElementById('myOut1').innerHTML = 
+  document.all.myText1.value
+}">
+
+<button onclick="displayDate()">The time is?</button>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="http://vignette4.wikia.nocookie.net/hotline-miami/images/d/dc/Untitled-2.png/revision/20150320222759" alt="Smiley" width="32" height="32">
+
+<div onscroll="myFunction()">Eyyy yyyy yyyyyy yy yyy yyyyyy yyyy yyyyyyyy yyyyyy yyy yyyy
+<br><br>
+'lmaoooo ooo oooooo oooo o ooooo  oo oo ooooo ooooooo ooooooooooooooo oooooo'</div>
+
+<p>Scrolled <span id="scroll">0</span> times.</p>
+
+<p>Press a key on the keyboard in the input field to find out if the SHIFT key was pressed or not.</p>
+
+<input type="text" onkeydown="isKeyPressed(event)">
+
+<p id="text"></p>
+
+<p>Try to resize the browser window to display the windows height and width.</p>
+
+<p id="size"></p>
+
+<script>
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+
+function bigImg(x) {
+    x.style.height = "128px";
+    x.style.width = "128px";
+}
+
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+}
+
+var x = 0;
+function myFunction() {
+    document.getElementById("scroll").innerHTML = x += 1;
+}
+
+function isKeyPressed(event) {
+    var x = document.getElementById("text");
+    if (event.shiftKey) {
+        x.innerHTML = "The SHIFT key was pressed!";
+    } else {
+        x.innerHTML = "The SHIFT key was NOT pressed!";
+    }
+}
+
+function myFunction() {
+    var w = window.outerWidth;
+    var h = window.outerHeight;
+    var txt = "Window size: width=" + w + ", height=" + h;
+    document.getElementById("size").innerHTML = txt;
+}
+</script>
+
+<p id="demo"></p>
+
+<div id="myOut1">  Output goes here</div>
+
+</body>
