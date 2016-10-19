@@ -26,13 +26,7 @@ div {
       <li>onSelect textbox data</li>
       <li>onKeypress textbox</li>
       <li>isKeyPressed textbox (use shiftkey)</li>
-      <li>onResize (resize window) *broken*
-        <ul>
-          Scrolling with the text box causes this to work. Syntax error?
-        </ul></li>
-        </ul>
-      <li></li>
-      <li></li>
+    </ul>
   </h2>
 
 This <b onClick="{
@@ -58,10 +52,6 @@ This <b onClick="{
 <input type="text" onkeydown="isKeyPressed(event)">
 
 <p id="text"></p>
-
-<p>Try to resize the browser window to display the windows height and width.</p>
-
-<p id="size"></p>
 
 <script>
 function displayDate() {
@@ -92,12 +82,6 @@ function isKeyPressed(event) {
     }
 }
 
-function myFunction() {
-    var w = window.outerWidth;
-    var h = window.outerHeight;
-    var txt = "Window size: width=" + w + ", height=" + h;
-    document.getElementById("size").innerHTML = txt;
-}
 </script>
 
 <p id="demo"></p>
@@ -105,3 +89,4 @@ function myFunction() {
 <div id="myOut1">  Output goes here</div>
 
 </body>
+
